@@ -1,6 +1,16 @@
-import React from 'react'
+// 1. Definimos las interfaces de tipo para las props
+interface QuoteHeaderProps {
+  quoteId: string;
+  title: string;
+}
 
-export function QuoteHeader({ quoteId, title }) {
+interface SectionTitleProps {
+  subtitle: string;
+  title: string;
+}
+
+// 2. Aplicamos la interfaz a los componentes
+export function QuoteHeader({ quoteId, title }: QuoteHeaderProps) {
   return (
     <div className="mb-8 rounded-[2rem] border border-white/10 bg-[#0a0a12] p-6 md:p-10 shadow-2xl flex flex-col md:flex-row justify-between gap-6">
       <div>
@@ -19,7 +29,7 @@ export function QuoteHeader({ quoteId, title }) {
   )
 }
 
-export function SectionTitle({ subtitle, title }) {
+export function SectionTitle({ subtitle, title }: SectionTitleProps) {
   return (
     <div className="mb-6 mt-12">
       <h4 className="mb-2 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.3em] text-blue-400">{subtitle}</h4>

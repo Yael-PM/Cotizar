@@ -1,4 +1,3 @@
-import React from 'react'
 import { QuoteHeader, SectionTitle, PaymentTerms, LegalAndGuarantees } from './components/Shared'
 
 export function ProyectoC() {

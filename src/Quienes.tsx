@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Quienes = () => {
   return (
     <div className="space-y-16 py-6 text-white">

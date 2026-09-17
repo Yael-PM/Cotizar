@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate, NavLink, Outlet } from 'react-router-dom'
 import { ProyectoA } from './ProyectoA'
 import { ProyectoB } from './ProyectoB'
