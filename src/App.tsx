@@ -15,9 +15,9 @@ function Layout() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   const navItems: NavItem[] = [
-    { label: 'Propuesta Sinergia Farmaceútica', path: '/cotizacion-a' },
-    { label: 'Propuesta Ctrl + Farma', path: '/cotizacion-b' },
-    { label: 'Propuesta Conjunta', path: '/cotizacion-c' },
+    { label: 'Propuesta A', path: '/cotizacion-a' },
+    { label: 'Propuesta B', path: '/cotizacion-b' },
+    //{ label: 'Propuesta Conjunta', path: '/cotizacion-c' },
     { label: '¿Quienes somos?', path: '/about-us' },
   ]
 
@@ -33,7 +33,7 @@ function Layout() {
         {/* Logo */}
         <div className="relative z-10 flex items-center gap-4">
           <img src={mexiwareLogo} alt="Mexiware Logo" className="h-5 w-auto object-contain sm:h-6 drop-shadow-[0_0_15px_rgba(37,99,235,0.3)]" />
-          <span className="hidden sm:block text-xs font-bold tracking-[0.2em] text-white/30 border-l border-white/10 pl-4">GRUPO FARMA</span>
+          <span className="hidden sm:block text-xs font-bold tracking-[0.2em] text-white/30 border-l border-white/10 pl-4">TAPSE</span>
         </div>
         
         {/* Nav Desktop (pantallas grandes) */}
